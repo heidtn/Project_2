@@ -1,13 +1,14 @@
 from math import sin
 from math import cos
 from math import sqrt
+from math import atan
 
 # robot geometry
 # (look at pics above for explanation)
-e = 115.0     # end effector
-f = 457.3     # base
-re = 232.0
-rf = 112.0
+e = 4.0     # end effector
+f = 10.0     # base
+re = 12.0
+rf = 10.0
  
  # trigonometric constants
 sqrt3 = sqrt(3.0)

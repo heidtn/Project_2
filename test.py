@@ -37,11 +37,11 @@ for x in frange(-15, 15, .1):
     for y in frange(-15, 15, .1):
         if(y == 0):
             continue
-        for z in frange(-15, 15, .1):
+        for z in frange(0, 15, .1):
             if(z == 0):
                 continue
             status = delta_calcInverse(x, y, z)
-            if(status == (-1,-1,-1)):
+            if(-1 in status):
                 dummy = 1
             else:
                 print status
