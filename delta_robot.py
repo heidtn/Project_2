@@ -5,7 +5,7 @@ from math import atan
 
 # robot geometry
 # (look at pics above for explanation)
-e = 4.0     # end effector
+e = 3.75     # end effector
 f = 10.0     # base
 re = 12.0
 rf = 10.0

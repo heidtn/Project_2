@@ -9,7 +9,7 @@ from json import dumps as json_dumps
 
 mySocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 mySocket.bind(("0.0.0.0",8080))
-mySocket.listen(2)
+mySocket.listen(1)
 
 client = None
 
