@@ -26,9 +26,9 @@ def delta_calcForward(theta1, theta2, theta3):
     t = (f-e)*tan30/2
     dtr = pi/180.0
 
-    theta1 *= dtr
-    theta2 *= dtr
-    theta3 *= dtr
+    theta1 *= -dtr
+    theta2 *= -dtr
+    theta3 *= -dtr
 
     y1 = -(t + rf*cos(theta1))
     z1 = -rf*sin(theta1)
@@ -67,7 +67,7 @@ def delta_calcForward(theta1, theta2, theta3):
     z0 = - 0.5*(b+sqrt(d))/a
     x0 = (a1*z0 + b1)/dnm
     y0 = (a2*z0 + b2)/dnm
-    return (x0, y0, z0)
+    return (x0, y0, -z0)
  
  
  # inverse kinematics
